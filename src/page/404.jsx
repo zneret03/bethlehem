@@ -17,7 +17,7 @@ const NoRouteMatch = () => {
                 </div>
 
             </div>
-            <a href="https://github.com/zneret03/gitprofile">{github}</a>
+            <a href="https://github.com/zneret03/bethlehem">{github}</a>
         </>
     )
 }
