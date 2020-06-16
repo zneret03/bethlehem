@@ -22,7 +22,7 @@ class Sider extends React.Component {
         return(
             <>
             <SideBar
-                    pullRight = {'true'}
+                    pullRight = {true}
                     styles={{
                             sidebar : sidebar
                         }}
