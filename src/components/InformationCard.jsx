@@ -3,7 +3,6 @@ import Card from '../utils/Card';
 import mockData from '../utils/mockData';
 const InformationCard = () => {
     
-
         return(
             <>
                 <Card information={mockData}/> 

@@ -1,6 +1,6 @@
 import React from 'react';
 import DesktopImage from '../utils/DesktopImage';
-import MobileImage from '../components/MoblieImage';
+import MobileImage from '../utils/MoblieImage';
 import Content from '../utils/Content';
 import Paragraph from '../utils/Paragraph';
 import Button from '../utils/Button';

@@ -53,7 +53,7 @@ class Home extends React.Component {
 
     render(){
         return(
-            <>
+            <>                  
                 <div className="desktop-view hidden sm:block relative">
                     <img className="sm:object-cover sm:h-screen sm:w-screen" src={require('../image/desktopViewHome.png')} alt=""/>
                 </div>

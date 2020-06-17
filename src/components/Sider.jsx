@@ -9,22 +9,14 @@ class Sider extends React.Component {
         mql.addListener(this.mediaQueryChanged);
       }
      
-      componentWillUnmount() {
-        this.state.mql.removeListener(this.mediaQueryChanged);
-      }
-      
     render()
     {
-        const sidebar = {
-            backgroundColor : '#FFFFFF'
-        }
-
         return(
             <>
             <SideBar
                     pullRight = {true}
                     styles={{
-                            sidebar : sidebar
+                            sidebar: {backgroundColor : '#FFFFFF'}
                         }}
                     open={this.props.open}
                     sidebar={
@@ -34,7 +26,7 @@ class Sider extends React.Component {
                                 <img src={require('../image/ei_close.svg')} alt=""/>
                             </span>
                         </div>
-                        <div className="flex flex-col mx-24 py-20 text-3xl" style={{color : '#A19F9C'}}>
+                        <div className="flex flex-col mx-24 py-20 text-3xl font-segoe-UI" style={{color : '#A19F9C'}}>
                         <ul>
                             <li className="my-3"><Link to="">Church</Link></li>
                             <li className="my-3"><Link to="">Music</Link></li>
