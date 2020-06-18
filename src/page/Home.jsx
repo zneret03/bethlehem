@@ -112,12 +112,7 @@ class Home extends React.Component {
     
         return(
             <>           
-                {this.state.sticky && <Navbar 
-                sticky={this.state.sticky} 
-                show={this.state.show}
-                hamburger={this.state.hamburger}
-                menu={(e) => this.sideBarOpen(e)}
-                close={(e) => this.sideBarClose(e)}
+                {this.state.sticky && <Navbar sticky={this.state.sticky} 
                 />
                 
                 }
@@ -126,7 +121,7 @@ class Home extends React.Component {
                     {backGroundWord}
                     {button}
                 </div>
-                <div className="block sm:hidden bg-no-repeat bg-cover"style={{backgroundImage : `url(${require('../image/mobileViewHome-min.png')})`}}>
+                <div className="block sm:hidden w-screen h-screen bg-no-repeat bg-cover"style={{backgroundImage : `url(${require('../image/mobileViewHome-min.png')})`}}>
                     {logo}
                     {backGroundWord}
                     {button}

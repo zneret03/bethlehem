@@ -2,42 +2,51 @@ import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faBars} from '@fortawesome/free-solid-svg-icons'
-import Sidebar from '../components/Sider';
 class Navbar extends React.Component {
     
-    button = () => {
-        const button = [
-        <Sidebar open={this.props.show} close={this.props.close}>
-            <div className="float-right p-5">
-                {this.props.hamburger ? (
-                    <button className="border border-white py-2 rounded px-3 font-bold text-white" onClick={this.props.menu}><FontAwesomeIcon icon={faBars}/></button>
-                ) : (
-                    <button className="border border-white rounded py-2 px-6 font-bold text-white" onClick={this.props.menu}>MENU</button>
-                )}
-            </div>
-        </Sidebar>
-        ]
+    constructor(){
+        super();
 
-        return button;
+        this.state = {
+            showNavbar : false
+        }
+
+        this.navbarOpen = this.navbarOpen.bind(this);
+    }
+
+    navbarOpen = (e) => {
+        e.preventDefault();
+        if(this.state.showNavbar !== true){
+            this.setState({
+                showNavbar : true
+            })
+        }
+        
+        if(this.state.showNavbar === true){
+            this.setState({
+                showNavbar : false
+            })
+        }
     }
 
     nav = (sticky) => {
         return(
             <div className={`${sticky} shadow-lg w-screen z-50 sm:block sm:p-4 sm:text-lg bg-black`}>
-                <div className="container mx-auto px-2">
-                <div className="flex items-center">
-                    <div className="py-2 sm:py-1 flex-1 sm:px-5 w-56">
+                <div className="container mx-auto px-2 sm:flex sm:justify-between sm:items-center">
+                <div className="flex justify-between items-center">
+                    <div className="py-4 px-3 sm:py-1 sm:px-5 w-56">
                         <img src={require('../image/B.png')} alt=""/>
                     </div>
-                    <ul className="xl:flex lg:flex md:flex font-segoe-UI text-white hidden sm:hidden md:block lg:block">
-                        <li className="mr-5"><AnchorLink href='#church'>Church</AnchorLink></li>
-                        <li className="mr-5"><AnchorLink href='#music'>Music</AnchorLink></li>
-                        <li className="mr-5"><AnchorLink href='#ministries'>Ministries</AnchorLink></li>
-                        <li className="mr-5"><AnchorLink href='#events'>Events</AnchorLink></li>
-                        <li className="mr-6"><AnchorLink href='#leaders'>Leaders</AnchorLink></li>
-                        <li><button className="font-bold text-white">Menu</button></li>
-                    </ul>
+                    <div className="block sm:hidden block py-2 px-3">
+                        <button className="border py-2 px-3 rounded font-bold text-white" onClick={(e) => this.navbarOpen(e)}><FontAwesomeIcon icon={faBars}/></button>
+                    </div>
                 </div>
+                <div className={`${this.state.showNavbar ? 'block' : 'hidden'} font-segoe-UI text-white sm:flex px-2 pb-2 sm:p-0`}>
+                        <span className="sm:mr-3 mt-1 px-2 py-1 sm:mt-0 block rounded hover:text-gray-500"><AnchorLink href='#church'>Church</AnchorLink></span>
+                        <span className="sm:mr-3 mt-1 px-2 py-1 sm:mt-0 block rounded hover:text-gray-500"><AnchorLink href='#music'>Music</AnchorLink></span>
+                        <span className="sm:mr-3 mt-1 px-2 py-1 sm:mt-0 block rounded hover:text-gray-500"><AnchorLink href='#ministries'>Ministries</AnchorLink></span>
+                        <span className="sm:mr-3 mt-1 px-2 py-1 sm:mt-0 block rounded hover:text-gray-500"><AnchorLink href='#events'>Events</AnchorLink></span>
+                    </div>
                 </div>
             </div>
         )

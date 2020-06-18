@@ -26,7 +26,7 @@ class Sider extends React.Component {
                     open={this.props.open}
                     sidebar={
                         <>
-                         <div className="float-right p-3 cursor-pointer">
+                         <div className="float-right p-3 cursor-pointer z-50">
                             <span onClick={this.props.close}>
                                 <img src={require('../image/ei_close.svg')} alt=""/>
                             </span>
