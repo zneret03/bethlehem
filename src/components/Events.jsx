@@ -4,13 +4,11 @@ import MobileImage from '../utils/MoblieImage';
 import Content from '../utils/Content';
 import Paragraph from '../utils/Paragraph';
 import Button from '../utils/Button';
-import { Parallax } from 'react-scroll-parallax';
 class Events extends React.Component{
     render(){
 
         const content = [
                 <Content>
-                <Parallax y={[-20, 20]} tagOuter="figure">
                     <div className="mt-20 text-white">
                         <Paragraph title={'EVENTS'} color={'#ACACAC'} 
                         heading={'Gather With Us'}
@@ -22,12 +20,11 @@ class Events extends React.Component{
                     <div className="mt-12 flex flex-wrap">
                         <Button buttonName={'MORE ABOUT EVENTS'}/>
                     </div>
-                </Parallax>
                 </Content>
         ]
 
         return(
-            <div>
+            <div id="events">
                 {/**Desktop image */}
                 <DesktopImage image={'EventsDesktop-min.png'}>
                    {content}

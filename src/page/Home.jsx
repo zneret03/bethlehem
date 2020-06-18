@@ -46,7 +46,7 @@ class Home extends React.Component {
 
     mountStickNavbar() {
         window.addEventListener('scroll', () => {
-            const fixed = window.pageYOffset < 820;
+            const fixed = window.pageYOffset < 300;
 
             if(fixed !== true){
                 this.setState({
@@ -62,7 +62,7 @@ class Home extends React.Component {
     }
 
     unMountStickyNavbar = () =>{
-        window.removeEventListener('scroll');
+        window.removeEventListener('scroll', this.mountStickNavbar.bind(this));
     }
 
     mountHamburger = () =>{
@@ -105,14 +105,22 @@ class Home extends React.Component {
         ]
 
         const logo = [
-            <div className="absolute top-0 left-0 p-5 w-32">
+            <div className="absolute top-0 left-0 p-5 w-64 container mx-auto px-10">
                 <img src={require('../image/Bcif.svg')} alt=""/>
             </div>
         ]
     
         return(
             <>           
-                {this.state.sticky && <Navbar sticky={this.state.sticky}/>}
+                {this.state.sticky && <Navbar 
+                sticky={this.state.sticky} 
+                show={this.state.show}
+                hamburger={this.state.hamburger}
+                menu={(e) => this.sideBarOpen(e)}
+                close={(e) => this.sideBarClose(e)}
+                />
+                
+                }
                 <div className="hidden sm:block w-screen h-screen bg-no-repeat bg-cover" style={{backgroundImage : `url(${require('../image/desktopViewHome-min.png')})`}}>
                     {logo}
                     {backGroundWord}

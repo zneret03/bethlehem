@@ -4,12 +4,10 @@ import MobileImage from '../utils/MoblieImage';
 import Content from '../utils/Content';
 import Paragraph from '../utils/Paragraph';
 import Button from '../utils/Button';
-import { Parallax } from 'react-scroll-parallax';
 class Leaders extends React.Component{
     render(){
         const content = [
             <Content>
-            <Parallax y={[-20, 20]} tagOuter="figure">
                 <div className="mt-20 text-white animated bounce">
                     <Paragraph title={'LEADERS'} color={'#242020'} 
                     heading={'Meet Our Leadership Team'}
@@ -21,12 +19,11 @@ class Leaders extends React.Component{
                 <div className="mt-12">
                     <Button buttonName={'GET TO KNOW THEM'}/>
                 </div>
-            </Parallax>
             </Content>
         ]
 
         return(
-            <div>
+            <div id="leaders">
                 {/**Desktop image */}
                 <DesktopImage image={'LeadersDesktop-min.png'}>
                     {content}

@@ -4,13 +4,11 @@ import MobileImage from '../utils/MoblieImage';
 import Content from '../utils/Content';
 import Paragraph from '../utils/Paragraph';
 import Button from '../utils/Button';
-import { Parallax } from 'react-scroll-parallax';
 class Music extends React.Component{
     render(){
         
         const content = [
             <Content>
-            <Parallax y={[-20, 20]} tagOuter="figure">
                 <div className="mt-20 text-white">
                     <Paragraph title={'MUSIC'} color={'#615151'} 
                     heading={'It’s All About God’s Presence'}
@@ -23,12 +21,11 @@ class Music extends React.Component{
                 <div className="mt-12">
                     <Button buttonName={'MORE ABOUT WORSHIP'}/>
                 </div>
-            </Parallax>
             </Content>
         ]
 
         return(
-            <div>
+            <div id="music">
                 {/**Desktop image */}
                 <DesktopImage image={'MusicDesktop-min.png'}>
                   {content}
