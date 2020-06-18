@@ -55,13 +55,13 @@ class Home extends React.Component {
         return(
             <>                  
                 <div className="desktop-view hidden sm:block relative">
-                    <img className="sm:object-cover sm:h-screen sm:w-screen" src={require('../image/desktopViewHome.png')} alt=""/>
+                    <img className="sm:object-cover sm:h-screen sm:w-screen" src={require('../image/desktopViewHome-min.png')} alt=""/>
                 </div>
                 <div className="mobile-view block sm:hidden">
-                    <img className="object-cover h-screen w-screen xl:hidden" src={require('../image/mobileViewHome.png')} alt=""/>
+                    <img className="object-cover h-screen w-screen xl:hidden" src={require('../image/mobileViewHome-min.png')} alt=""/>
                 </div>
                 <div className="absolute top-0 right-0 left-0 bottom-0 mx-auto w-11/12 py-40 sm:py-20 md:py-5 sm:w-10/12 md:w-8/12 xl:w-6/12 lg:w-6/12 xl:py-0">
-                    <img className="text-center" src={require('../image/desktopViewWords.png')} alt=""/>
+                    <img className="text-center" src={require('../image/desktopViewWords-min.png')} alt=""/>
                 </div>
                 <div className="absolute top-0 left-0 p-5 w-32">
                     <img src={require('../image/Bcif.svg')} alt=""/>

@@ -13,11 +13,11 @@ class Church extends React.Component{
                     <DesktopImage> 
                         <img className="sm:object-cover md:object-cover lg:object-cover xl:object-cover 
                         xl:w-screen xl:h-auto md:h-screen md:w-screen lg:h-screen lg:w-screen sm:h-screen sm:w-screen" 
-                        src={require('../image/ServiceDesktop.png')} alt=""/>
+                        src={require('../image/ServiceDesktop-min.png')} alt=""/>
                     </DesktopImage>
                     {/**Mobile image */}
                     <MobileImage>
-                        <img className="object-contain h-screen w-screen xl:hidden" src={require('../image/ServiceMobile.png')} alt=""/>
+                        <img className="object-contain h-screen w-screen xl:hidden" src={require('../image/ServiceMobile-min.png')} alt=""/>
                     </MobileImage>
                     <div className="flex justify-center flex-wrap items-center text-center">
                         <div className="text-white absolute top-0 font-bold mt-40 xl:mt-20">

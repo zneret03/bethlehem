@@ -11,11 +11,11 @@ class Music extends React.Component{
             <div className="relative">
                 {/**Desktop image */}
                 <DesktopImage>
-                    <img className="sm:object-cover sm:h-screen sm:w-screen" src={require('../image/MusicDesktop.png')} alt=""/>
+                    <img className="sm:object-cover sm:h-screen sm:w-screen" src={require('../image/MusicDesktop-min.png')} alt=""/>
                 </DesktopImage>
                 {/**Mobile image */}
                 <MobileImage>
-                    <img className="object-cover h-screen w-screen xl:hidden" src={require('../image/MusicMobile.png')} alt=""/>
+                    <img className="object-cover h-screen w-screen xl:hidden" src={require('../image/MusicMobile-min.png')} alt=""/>
                 </MobileImage>
                 {/** content*/}
                 <Content>

@@ -11,11 +11,11 @@ class Events extends React.Component{
             <div className="relative">
                 {/**Desktop image */}
                 <DesktopImage>
-                    <img className="sm:object-cover sm:h-screen sm:w-screen" src={require('../image/EventsDesktop.png')} alt=""/>
+                    <img className="sm:object-cover sm:h-screen sm:w-screen" src={require('../image/EventsDesktop-min.png')} alt=""/>
                 </DesktopImage>
                 {/**Mobile image */}
                 <MobileImage>
-                    <img className="object-cover h-screen w-screen xl:hidden" src={require('../image/EventsMobile.png')} alt=""/>
+                    <img className="object-cover h-screen w-screen xl:hidden" src={require('../image/EventsMobile-min.png')} alt=""/>
                 </MobileImage>
                 {/** content*/}
                 <Content>

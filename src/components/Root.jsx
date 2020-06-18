@@ -9,7 +9,7 @@ const Ministries = lazy(() => import('./Ministries'));
 const Events = lazy(() => import('./Events'));
 const Quote = lazy(() => import('./Quote'));
 const Leaders = lazy(() => import('./Leaders'));
-const Information = lazy(() => import('./InformationCard'));
+const Information = lazy(() => import('./Information'));
 const InformationCard = lazy(() => import('./InformationCard'));
 const Service = lazy(() => import('./Service'));
 const UpComingEvents = lazy(() => import('./UpComingEvents'));

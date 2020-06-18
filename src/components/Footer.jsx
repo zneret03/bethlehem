@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="container mx-auto p-4">
                 <div className="flex flex-wrap sm:items-center">
                     <div className="w-32 my-2">
-                        <img src={require('../image/bcifFooter.png')} alt=""/>
+                        <img src={require('../image/BcifFooter.svg')} alt=""/>
                     </div>
                     <div className="font-bold text-xs sm:text-sm flex-1 flex-wrap" style={{color : '#8D7979'}}>
                         <h6>© 2020 Bethlehem Corner taft-montinola Sts., Sta. Barbara, Iloilo</h6>

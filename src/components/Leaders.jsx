@@ -11,11 +11,11 @@ class Leaders extends React.Component{
             <div className="relative">
                 {/**Desktop image */}
                 <DesktopImage>
-                    <img className="sm:object-cover sm:h-screen sm:w-screen" src={require('../image/LeadersDesktop.png')} alt=""/>
+                    <img className="sm:object-cover sm:h-screen sm:w-screen" src={require('../image/LeadersDesktop-min.png')} alt=""/>
                 </DesktopImage>
                 {/**Mobile image */}
                 <MobileImage>
-                    <img className="object-cover h-screen w-screen xl:hidden" src={require('../image/LeadersMobile.png')} alt=""/>
+                    <img className="object-cover h-screen w-screen xl:hidden" src={require('../image/LeadersMobile-min.png')} alt=""/>
                 </MobileImage>
                 {/** content*/}
                 <Content>

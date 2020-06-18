@@ -1,7 +1,7 @@
 const information = [
     {
         id : 1,
-        image : 'community.jpg',
+        image : 'community-min.jpg',
         title : 'Helping Community',
         paragraph : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil. ',
         hashtag1 : '#community',
@@ -10,7 +10,7 @@ const information = [
     },
     {
         id : 2,
-        image : 'creativeness.jpg',
+        image : 'creativeness-min.jpg',
         title : 'Creativeness',
         paragraph : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil. ',
         hashtag1 : '#happiness',
@@ -19,7 +19,7 @@ const information = [
     },
     {
         id : 3,
-        image : 'school.jpg',
+        image : 'school-min.jpg',
         title : 'School Community',
         paragraph : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil. ',
         hashtag1 : '#Knowledge',
@@ -28,7 +28,7 @@ const information = [
     },
     {
         id : 4,
-        image : 'Outreach.jpg',
+        image : 'Outreach-min.jpg',
         title : 'Outreach Program',
         paragraph : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil. ',
         hashtag1 : '#community',

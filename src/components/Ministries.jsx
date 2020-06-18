@@ -11,11 +11,11 @@ class Ministries extends React.Component{
             <div className="relative">
                 {/**Desktop image */}
                 <DesktopImage>
-                    <img className="sm:object-cover sm:h-screen sm:w-screen" src={require('../image/MinistriesDesktop.png')} alt=""/>
+                    <img className="sm:object-cover sm:h-screen sm:w-screen" src={require('../image/MinistriesDesktop-min.png')} alt=""/>
                 </DesktopImage>
                 {/**Mobile image */}
                 <MobileImage>
-                    <img className="object-cover h-screen w-screen xl:hidden" src={require('../image/MinistriesMobile.png')} alt=""/>
+                    <img className="object-cover h-screen w-screen xl:hidden" src={require('../image/MinistriesMobile-min.png')} alt=""/>
                 </MobileImage>
                 {/** content*/}
                 <Content>

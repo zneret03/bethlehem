@@ -11,11 +11,11 @@ class Church extends React.Component{
                 <div className="relative">
                     {/**Desktop image */} 
                     <DesktopImage> 
-                        <img className="sm:object-cover sm:h-screen sm:w-screen "  src={require('../image/ChurchDesktop.png')} alt="" speed={500}/>
+                        <img className="sm:object-cover sm:h-screen sm:w-screen "  src={require('../image/ChurchDesktop-min.png')} alt="" speed={500}/>
                     </DesktopImage>
                     {/**Mobile image */}
                     <MobileImage>
-                        <img className="object-cover h-screen w-screen xl:hidden" src={require('../image/ChurchMobile.png')} alt=""/>
+                        <img className="object-cover h-screen w-screen xl:hidden" src={require('../image/ChurchMobile-min.png')} alt=""/>
                     </MobileImage>
                     {/** content*/}
                     <Content>

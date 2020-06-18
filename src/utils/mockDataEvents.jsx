@@ -1,6 +1,6 @@
 const information = [
     {
-        image : 'SundayService.jpg',
+        image : 'SundayService-min.jpg',
         title : 'Sunday Service',
         paragraph : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil. ',
         hashtag1 : '#9:00AM',
@@ -9,7 +9,7 @@ const information = [
         redirect : '/sundayService'
     },
     {
-        image : 'PrayerMeeting.jpg',
+        image : 'PrayerMeeting-min.jpg',
         title : 'Prayer Meeting',
         paragraph : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil. ',
         hashtag1 : '#7:00PM',
@@ -18,7 +18,7 @@ const information = [
         redirect : '/prayerMeeting'
     },
     {
-        image : 'Discipleship.jpg',
+        image : 'Discipleship-min.jpg',
         title : 'Discipleship',
         paragraph : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil. ',
         hashtag1 : '#testimony',
@@ -27,7 +27,7 @@ const information = [
         redirect : '/discipleship'
     },
     {
-        image : 'YouthOvernight.jpg',
+        image : 'YouthOvernight-min.jpg',
         title : 'Youth Overnight',
         paragraph : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil. ',
         hashtag1 : '#6:00PM',
@@ -36,7 +36,7 @@ const information = [
         redirect : '/youthOvernight'
     },
     {
-        image : 'YouthJam.jpg',
+        image : 'YouthJam-min.jpg',
         title : 'Youth Jam',
         paragraph : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil. ',
         hashtag1 : '#talent',
@@ -45,7 +45,7 @@ const information = [
         redirect : '/youthJam'
     },
     {
-        image : 'PrayerFasting.jpg',
+        image : 'PrayerFasting-min.jpg',
         title : 'Prayer Fasting',
         paragraph : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil. ',
         hashtag1 : '#9:00AM',
