@@ -7,17 +7,8 @@ import Button from '../utils/Button';
 import { Parallax } from 'react-scroll-parallax';
 class Events extends React.Component{
     render(){
-        return(
-            <div className="relative">
-                {/**Desktop image */}
-                <DesktopImage>
-                    <img className="sm:object-cover sm:h-screen sm:w-screen" src={require('../image/EventsDesktop-min.png')} alt=""/>
-                </DesktopImage>
-                {/**Mobile image */}
-                <MobileImage>
-                    <img className="object-cover h-screen w-screen xl:hidden" src={require('../image/EventsMobile-min.png')} alt=""/>
-                </MobileImage>
-                {/** content*/}
+
+        const content = [
                 <Content>
                 <Parallax y={[-20, 20]} tagOuter="figure">
                     <div className="mt-20 text-white">
@@ -33,6 +24,18 @@ class Events extends React.Component{
                     </div>
                 </Parallax>
                 </Content>
+        ]
+
+        return(
+            <div>
+                {/**Desktop image */}
+                <DesktopImage image={'EventsDesktop-min.png'}>
+                   {content}
+                </DesktopImage>
+                {/**Mobile image */}
+                <MobileImage image={'EventsMobile-min.png'}>
+                    {content}
+                </MobileImage>
             </div>
         )
     }

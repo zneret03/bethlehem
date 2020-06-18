@@ -31,7 +31,7 @@ class Root extends React.Component {
                 <Leaders />
                 <Information />
                 <InformationCard />
-                <Service />
+                {/* <Service /> */}
                 <Testimony/>
                 <UpComingEvents/>
                 <Footer />

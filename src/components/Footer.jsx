@@ -3,7 +3,7 @@ import {Facebook, Twitter, Instagram, GitHub} from 'react-feather';
 const Footer = () => {
 
     return(
-        <div style={{backgroundColor : '#1E2427'}}>
+        <div className="w-screen" style={{backgroundColor : '#1E2427'}}>
             <div className="container mx-auto p-4">
                 <div className="flex flex-wrap sm:items-center">
                     <div className="w-32 my-2">

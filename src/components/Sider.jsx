@@ -2,7 +2,6 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import SideBar from 'react-sidebar';
 const mql = window.matchMedia(`(min-width: 800px)`);
-
 class Sider extends React.Component {
 
     componentWillMount() {
@@ -16,7 +15,8 @@ class Sider extends React.Component {
             <SideBar
                     pullRight = {true}
                     styles={{
-                            sidebar: {backgroundColor : '#FFFFFF'}
+                            sidebar: {backgroundColor : '#FFFFFF', 
+                            position : 'fixed'}
                         }}
                     open={this.props.open}
                     sidebar={
