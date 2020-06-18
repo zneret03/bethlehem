@@ -11,7 +11,7 @@ const Quote = lazy(() => import('./Quote'));
 const Leaders = lazy(() => import('./Leaders'));
 const Information = lazy(() => import('./Information'));
 const InformationCard = lazy(() => import('./InformationCard'));
-const Service = lazy(() => import('./Service'));
+// const Service = lazy(() => import('./Service'));
 const UpComingEvents = lazy(() => import('./UpComingEvents'));
 const Testimony = lazy(() => import('./Testimony'));
 const Footer = lazy(() => import('./Footer'));
