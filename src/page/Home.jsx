@@ -46,7 +46,7 @@ class Home extends React.Component {
 
     mountStickNavbar() {
         window.addEventListener('scroll', () => {
-            const fixed = window.pageYOffset < 300;
+            const fixed = window.pageYOffset < 500;
 
             if(fixed !== true){
                 this.setState({
