@@ -1,5 +1,4 @@
 import React, {lazy, Suspense} from 'react';
-import { ParallaxProvider } from 'react-scroll-parallax';
 
 const Home = lazy(() => import('../page/Home'));
 const Navigation = lazy(() => import('./Navigation'));
@@ -18,7 +17,6 @@ const Footer = lazy(() => import('./Footer'));
 class Root extends React.Component {
     render(){
         return(
-            <ParallaxProvider>
             <>
             <Suspense fallback={<div className="flex items-center justify-center h-screen">Loading...</div>}>
                 <Home />
@@ -37,7 +35,6 @@ class Root extends React.Component {
                 <Footer />
             </Suspense>
             </>
-            </ParallaxProvider>
         )
     }
 }
