@@ -8,7 +8,7 @@ class Church extends React.Component{
     render(){
 
         const content = [
-            <Content>
+            <Content key="church">
                 <div className="mt-20 text-white">
                     <Paragraph title={'CHURCH'} 
                     heading={'Personal Revival, Kingdom'}
@@ -20,7 +20,7 @@ class Church extends React.Component{
                     textMargin={'xl:mr-32'}/>
                 </div>
                 <div className="mt-12">
-                    <Button buttonName={'more about local church'}/>
+                    <Button redirect={'/church'} buttonName={'more about local church'}/>
                 </div>
             </Content>
         ]

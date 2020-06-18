@@ -8,7 +8,7 @@ class Ministries extends React.Component{
     render(){
         
         const content = [
-            <Content>
+            <Content key="Ministries">
                 <div className="mt-20 text-white animated bounce">
                     <Paragraph title={'MINISTRIES'} color={'#242020'} 
                     heading={'Reaching Out, Reflecting Christ,'}
@@ -19,7 +19,7 @@ class Ministries extends React.Component{
                     textMargin={'xl:mr-20'}/>
                 </div>
                 <div className="mt-12">
-                    <Button buttonName={'MORE ABOUT MINISTRIES'}/>
+                    <Button redirect={'/ministries'} buttonName={'MORE ABOUT MINISTRIES'}/>
                 </div>
             </Content>
         ]

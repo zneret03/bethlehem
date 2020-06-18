@@ -8,7 +8,7 @@ class Music extends React.Component{
     render(){
         
         const content = [
-            <Content>
+            <Content key="Music">
                 <div className="mt-20 text-white">
                     <Paragraph title={'MUSIC'} color={'#615151'} 
                     heading={'It’s All About God’s Presence'}
@@ -19,7 +19,7 @@ class Music extends React.Component{
                     textMargin={'xl:mr-20'}/>
                 </div>
                 <div className="mt-12">
-                    <Button buttonName={'MORE ABOUT WORSHIP'}/>
+                    <Button redirect={'/music'} buttonName={'MORE ABOUT WORSHIP'}/>
                 </div>
             </Content>
         ]

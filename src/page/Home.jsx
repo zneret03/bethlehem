@@ -87,13 +87,13 @@ class Home extends React.Component {
     render(){
 
         const backGroundWord = [
-            <div className="mx-auto w-11/12 py-40 sm:py-20 md:py-5 sm:w-10/12 md:w-8/12 xl:w-6/12 lg:w-6/12 xl:py-0">
-                        <img className="text-center object-cover" src={require('../image/desktopViewWords-min.png')} alt=""/>
-                    </div>
+            <div className="mx-auto w-11/12 py-40 sm:py-20 md:py-5 sm:w-10/12 md:w-8/12 xl:w-6/12 lg:w-6/12 xl:py-0" key="word">
+                <img className="text-center object-cover" src={require('../image/desktopViewWords-min.png')} alt=""/>
+            </div>
         ]
 
         const button = [
-        <Sidebar open={this.state.show} close={(e) => this.sideBarClose(e)}>
+        <Sidebar open={this.state.show} close={(e) => this.sideBarClose(e)} key="sidebar">
             <div className="float-right p-5 sticky top-0">
                 {this.state.hamburger ? (
                     <button className="border py-2 px-3 rounded font-bold bg-white" onClick={(e) => this.sideBarOpen(e)}><FontAwesomeIcon icon={faBars}/></button>
@@ -105,7 +105,7 @@ class Home extends React.Component {
         ]
 
         const logo = [
-            <div className="absolute top-0 left-0 p-5 w-64 container mx-auto px-10">
+            <div className="absolute top-0 left-0 p-5 w-64 container mx-auto px-10" key="logo">
                 <img src={require('../image/Bcif.svg')} alt=""/>
             </div>
         ]

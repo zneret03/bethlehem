@@ -7,6 +7,10 @@ class Sider extends React.Component {
     componentWillMount() {
         mql.addListener(this.mediaQueryChanged);
       }
+
+      componentWillUnmount(){
+          mql.removeEventListener(this.mediaQueryChanged);
+      }
      
     render()
     {
@@ -16,7 +20,8 @@ class Sider extends React.Component {
                     pullRight = {true}
                     styles={{
                             sidebar: {backgroundColor : '#FFFFFF', 
-                            position : 'fixed'}
+                            position : 'fixed',
+                            }
                         }}
                     open={this.props.open}
                     sidebar={

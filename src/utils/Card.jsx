@@ -7,10 +7,9 @@ const Card = ({information}) =>  {
             <div className="container mx-auto p-6 grid grid-rows gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 
             flex justify-center  pt-10 pb-20">  
                 {information.map((info) => (
-                    <Link to={info.redirect}>
+                    <Link to={info.redirect} key={info.id}>
                         <div className="mx-auto rounded overflow-hidden shadow-lg transition 
-                        duration-500 ease-in-out transform hover:translate-y-6 hover:scale-105 cursor-pointer" 
-                        key={info.id}>
+                        duration-500 ease-in-out transform hover:translate-y-6 hover:scale-105 cursor-pointer">
                         <img className="w-full" src={require(`../image/${info.image}`)} alt=""/>
                             <div className="px-6 pt-4">
                                 <div className="font-bold text-xl mb-2 text-gray-700">{info.title}</div>

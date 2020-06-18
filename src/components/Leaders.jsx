@@ -7,7 +7,7 @@ import Button from '../utils/Button';
 class Leaders extends React.Component{
     render(){
         const content = [
-            <Content>
+            <Content key="Leaders">
                 <div className="mt-20 text-white animated bounce">
                     <Paragraph title={'LEADERS'} color={'#242020'} 
                     heading={'Meet Our Leadership Team'}
@@ -17,7 +17,7 @@ class Leaders extends React.Component{
                     textMargin={'xl:mr-20'}/>
                 </div>
                 <div className="mt-12">
-                    <Button buttonName={'GET TO KNOW THEM'}/>
+                    <Button redirect={'/leaders'} buttonName={'GET TO KNOW THEM'}/>
                 </div>
             </Content>
         ]

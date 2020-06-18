@@ -4,11 +4,10 @@ const Card = ({information}) =>  {
     
         return(
             <div className="container mx-auto p-6 grid grid-rows gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 flex justify-center  pt-10 pb-20">
-                {information.map((info, index) => (
-                    <Link to={info.redirect}>
+                {information.map((info) => (
+                    <Link to={info.redirect} key={info.id}>
                         <div className="max-w-xs rounded overflow-hidden shadow-lg transition 
-                        duration-500 ease-in-out transform hover:translate-y-6 hover:scale-105 cursor-pointer" 
-                        key={index}>
+                        duration-500 ease-in-out transform hover:translate-y-6 hover:scale-105 cursor-pointer" >
                         <img className="w-full" src={require(`../image/UpcomingEvents/${info.image}`)} alt=""/>
                         <div className="absolute top-0 right-0 p-2">
                             <div className="text-white font-bold rounded-full h-16 w-16 flex items-center bg-gray-700 justify-center" >

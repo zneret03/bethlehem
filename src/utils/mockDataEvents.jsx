@@ -1,5 +1,6 @@
 const information = [
     {
+        id : "1",
         image : 'SundayService-min.jpg',
         title : 'Sunday Service',
         paragraph : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil. ',
@@ -9,6 +10,7 @@ const information = [
         redirect : '/sundayService'
     },
     {
+        id : "2",
         image : 'PrayerMeeting-min.jpg',
         title : 'Prayer Meeting',
         paragraph : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil. ',
@@ -18,6 +20,7 @@ const information = [
         redirect : '/prayerMeeting'
     },
     {
+        id : "3",
         image : 'Discipleship-min.jpg',
         title : 'Discipleship',
         paragraph : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil. ',
@@ -27,6 +30,7 @@ const information = [
         redirect : '/discipleship'
     },
     {
+        id : "4",
         image : 'YouthOvernight-min.jpg',
         title : 'Youth Overnight',
         paragraph : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil. ',
@@ -36,6 +40,7 @@ const information = [
         redirect : '/youthOvernight'
     },
     {
+        id : "5",
         image : 'YouthJam-min.jpg',
         title : 'Youth Jam',
         paragraph : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil. ',
@@ -45,6 +50,7 @@ const information = [
         redirect : '/youthJam'
     },
     {
+        id : "6",
         image : 'PrayerFasting-min.jpg',
         title : 'Prayer Fasting',
         paragraph : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil. ',

@@ -1,7 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
 import {ArrowRightCircle, ArrowLeftCircle} from 'react-feather';
-import {Link} from 'react-router-dom';
 const TestimonyCards = ({information}) => {
 
     const settings = {
@@ -39,7 +38,6 @@ const TestimonyCards = ({information}) => {
             <div className="px-8">
                 <Slider {...settings}>
                     {information.map((info) => (
-                        <Link>
                         <div className="overflow-hidden max-w-xs border-t-4 border-blue-700 shadow-lg rounded transition 
                         duration-500 ease-in-out transform hover:translate-y-6 hover:scale-105" key={info.id}>
                             <div className="text-lg">
@@ -56,7 +54,6 @@ const TestimonyCards = ({information}) => {
                                 </div>
                             </div>
                         </div> 
-                        </Link>
                     ))}
             </Slider>
             </div>

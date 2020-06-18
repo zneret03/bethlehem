@@ -8,7 +8,7 @@ class Events extends React.Component{
     render(){
 
         const content = [
-                <Content>
+                <Content key="Events">
                     <div className="mt-20 text-white">
                         <Paragraph title={'EVENTS'} color={'#ACACAC'} 
                         heading={'Gather With Us'}
@@ -18,7 +18,7 @@ class Events extends React.Component{
                         textMargin={'xl:mr-20'}/>
                     </div>
                     <div className="mt-12 flex flex-wrap">
-                        <Button buttonName={'MORE ABOUT EVENTS'}/>
+                        <Button redirect={'/events'} buttonName={'MORE ABOUT EVENTS'}/>
                     </div>
                 </Content>
         ]
