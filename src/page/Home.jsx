@@ -45,7 +45,7 @@ class Home extends React.Component {
 
     mountStickNavbar() {
         window.addEventListener('scroll', () => {
-            const fixed = window.pageYOffset < 500;
+            const fixed = window.pageYOffset < 180;
 
             if(fixed !== true){
                 this.setState({
@@ -104,14 +104,19 @@ class Home extends React.Component {
         ]
 
         const logo = [
-            <div className="absolute top-0 left-0 p-5 w-64 container mx-auto px-10" key="logo">
-                <img src={require('../image/Bcif.svg')} alt=""/>
+            <div className="absolute top-0 left-0 z-20 p-5 w-64 container mx-auto px-5" key="logo">
+                <a href="https://bcif.netlify.com"><img src={require('../image/Bcif.svg')} alt=""/></a>
             </div>
         ]
     
         return(
             <>           
-                {this.state.sticky && <Navbar sticky={this.state.sticky} 
+                {this.state.sticky && <Navbar
+                show={this.state.show}
+                open={(e) => this.sideBarOpen(e)}
+                close={(e) => this.sideBarClose(e)}
+                hamburger={this.state.hamburger}
+                sticky={this.state.sticky} 
                 />
                 
                 }
