@@ -87,13 +87,13 @@ class Home extends React.Component {
 
         const backGroundWord = [
             <div className="mx-auto w-11/12 py-40 sm:py-20 md:py-5 sm:w-10/12 md:w-8/12 xl:w-6/12 lg:w-6/12 xl:py-0" key="word">
-                <img className="text-center object-cover" src={require('../image/desktopViewWords-min.png')} alt=""/>
+                <img className="text-center object-cover w-screen" src={require('../image/desktopViewWords-min.png')} alt=""/>
             </div>
         ]
 
         const button = [
         <Sidebar open={this.state.show} close={(e) => this.sideBarClose(e)} key="sidebar">
-            <div className="float-right p-5 sticky top-0">
+            <div className="float-right p-5">
                 {this.state.hamburger ? (
                     <button className="border py-2 px-3 rounded font-bold bg-white" onClick={(e) => this.sideBarOpen(e)}><Menu size="20"/></button>
                 ) : (
@@ -104,7 +104,7 @@ class Home extends React.Component {
         ]
 
         const logo = [
-            <div className="absolute top-0 left-0 z-20 p-5 w-64 container mx-auto px-5" key="logo">
+            <div className="absolute top-0 left-0 z-20 p-5 w-screen h-screen container mx-auto px-5" key="logo">
                 <a href="https://bcif.netlify.com"><img src={require('../image/Bcif.svg')} alt=""/></a>
             </div>
         ]
@@ -130,7 +130,6 @@ class Home extends React.Component {
                     {backGroundWord}
                     {button}
                 </div>
-               
             </>
         );
     }

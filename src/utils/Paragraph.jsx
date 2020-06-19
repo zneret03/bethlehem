@@ -2,7 +2,7 @@ import React from 'react';
 const Paragraph = ({title, heading, secondHeading, paragraph, color, textMargin}) =>{
     return(
         <>
-            <div className="leading-tight md:text-3xl">
+            <div className="leading-tight md:text-3xl w-screen">
                 <p className="font-bold text-sm mb-3" style={{color : color}}>{title}</p>
                 <p className="font-serif text-4xl">{heading}</p>
                 <p className="font-serif text-4xl">{secondHeading}</p>
