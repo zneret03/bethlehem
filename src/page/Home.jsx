@@ -104,7 +104,7 @@ class Home extends React.Component {
         ]
 
         const logo = [
-            <div className="absolute top-0 left-0 z-20 p-5 w-screen h-screen container mx-auto px-5" key="logo">
+            <div className="absolute top-0 left-0 z-20 p-5 w-screen container mx-auto px-5" key="logo">
                 <a href="https://bcif.netlify.com"><img src={require('../image/Bcif.svg')} alt=""/></a>
             </div>
         ]
