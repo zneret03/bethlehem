@@ -1,7 +1,6 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faBars} from '@fortawesome/free-solid-svg-icons'
+import {Menu} from 'react-feather';
 class Navbar extends React.Component {
     
     constructor(){
@@ -38,7 +37,7 @@ class Navbar extends React.Component {
                         <img src={require('../image/B.png')} alt=""/>
                     </div>
                     <div className="block sm:hidden block py-2 px-3">
-                        <button className="border py-2 px-3 rounded font-bold text-white" onClick={(e) => this.navbarOpen(e)}><FontAwesomeIcon icon={faBars}/></button>
+                        <button className="border py-2 px-3 rounded font-bold text-white" onClick={(e) => this.navbarOpen(e)}><Menu size="20"/></button>
                     </div>
                 </div>
                 <div className={`${this.state.showNavbar ? 'block' : 'hidden'} font-segoe-UI text-white sm:flex px-2 pb-2 sm:p-0`}>

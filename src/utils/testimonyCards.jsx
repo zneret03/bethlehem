@@ -1,6 +1,8 @@
 import React from 'react';
 import Slider from 'react-slick';
 import {ArrowRightCircle, ArrowLeftCircle} from 'react-feather';
+
+
 const TestimonyCards = ({information}) => {
 
     const settings = {
@@ -9,7 +11,7 @@ const TestimonyCards = ({information}) => {
         speed: 1000,
         slidesToShow: 3,
         slidesToScroll: 3,
-        arrows : true,
+        lazyLoad : true,    
         nextArrow : <ArrowRightCircle color="blue"/>,
         prevArrow : <ArrowLeftCircle color="blue"/>,
         responsive : [
@@ -24,6 +26,7 @@ const TestimonyCards = ({information}) => {
             {
                 breakpoint: 600,
                 settings: {
+                  centerPadding: "60px",
                   slidesToShow: 1,
                   slidesToScroll: 1,
                   initialSlide: 1
@@ -33,7 +36,7 @@ const TestimonyCards = ({information}) => {
       };
       
     return(
-        <div className="container mx-auto py-8">
+        <div className="container mx-auto py-5">
             <div className="px-8">
                 <Slider {...settings}>
                     {information.map((info) => (

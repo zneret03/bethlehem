@@ -1,6 +1,5 @@
 import React from 'react';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faBars} from '@fortawesome/free-solid-svg-icons'
+import {Menu} from 'react-feather';
 import Sidebar from '../components/Sider';
 import Navbar from '../components/Navbar'
 class Home extends React.Component {
@@ -96,7 +95,7 @@ class Home extends React.Component {
         <Sidebar open={this.state.show} close={(e) => this.sideBarClose(e)} key="sidebar">
             <div className="float-right p-5 sticky top-0">
                 {this.state.hamburger ? (
-                    <button className="border py-2 px-3 rounded font-bold bg-white" onClick={(e) => this.sideBarOpen(e)}><FontAwesomeIcon icon={faBars}/></button>
+                    <button className="border py-2 px-3 rounded font-bold bg-white" onClick={(e) => this.sideBarOpen(e)}><Menu size="20"/></button>
                 ) : (
                     <button className="border py-2 px-6 rounded font-bold bg-white" onClick={(e) => this.sideBarOpen(e)}>MENU</button>
                 )}
