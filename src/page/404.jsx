@@ -1,11 +1,9 @@
 import React from 'react';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faGithub} from '@fortawesome/free-brands-svg-icons';
+import {GitHub} from 'react-feather';
 import {Link} from 'react-router-dom';
 
 const NoRouteMatch = () => {
 
-    const github = <FontAwesomeIcon className="block text-gray-500 hover:text-blue-800 mb-8 mx-auto" icon={faGithub} size="2x"/>
     return(
         <>
             <div className="h-screen flex items-center justify-center text-center">
@@ -14,10 +12,13 @@ const NoRouteMatch = () => {
                     <p className="text-gray-500 text-xs mt-5 font-mono">This site is under maintenance sorry for inconvenients</p>
                     <p className="text-gray-500 text-xs font-mono">Back to <Link className="hover:text-red-500 hover:underline " to="/">home</Link></p>
                     <img className="mt-10 mr-16" src={require('../image/404.png')} alt=""/>
+                <div className="flex justify-center mt-20">
+                    <div className="border rounded-full py-3 px-3" style={{borderColor : '#005D7F'}}>
+                        <a href="https://github.com/zneret03/bethlehem"><GitHub color="#005D7F"/></a>
+                    </div>
                 </div>
-
+                </div>
             </div>
-            <a href="https://github.com/zneret03/bethlehem">{github}</a>
         </>
     )
 }

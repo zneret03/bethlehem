@@ -4,7 +4,7 @@ import SideBar from 'react-sidebar';
 const mql = window.matchMedia(`(min-width: 800px)`);
 class Sider extends React.Component {
 
-    UNSAFE_componentWillMount() {
+    componentWillMount() {
         mql.addListener(this.mediaQueryChanged);
       }
 
