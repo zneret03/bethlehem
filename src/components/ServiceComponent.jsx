@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../utils/Button'
 class Church extends React.Component{   
     render(){
         return(
@@ -8,6 +9,9 @@ class Church extends React.Component{
                         <div className="text-white font-bold p-10">
                             <h1 className="uppercase text-6xl">service time</h1>
                             <h6 className="font-segoe-UI">SUN | 9:00 AM</h6>
+                            <div className="pt-10">
+                                <Button redirect={'/location'} buttonName={'church location'}/>
+                            </div>
                         </div>
                     </div>
                     </div>

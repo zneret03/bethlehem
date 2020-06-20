@@ -1,7 +1,7 @@
 import React from 'react';
 import {Menu} from 'react-feather';
-import Sidebar from '../components/Sider';
-import Navbar from '../components/Navbar'
+import Sidebar from '../components/SiderComponent';
+import Navbar from '../components/NavbarComponent'
 class Home extends React.Component {
 
     constructor(){

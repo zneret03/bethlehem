@@ -1,8 +1,8 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {Menu} from 'react-feather';
-import Sidebar from '../components/Sider';
-class Navbar extends React.Component {
+import Sidebar from './SiderComponent';
+class NavbarComponent extends React.Component {
     
     constructor(){
         super();
@@ -77,4 +77,4 @@ class Navbar extends React.Component {
     }
 }
 
-export default Navbar;
+export default NavbarComponent;
