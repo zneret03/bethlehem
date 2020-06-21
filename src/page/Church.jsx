@@ -1,57 +1,58 @@
 import React from 'react';
-import HeaderComponent from '../components/HeaderComponent';
-class Church extends React.Component {
+import PageContent from '../utils/PageContent';
+const Church = () => {
 
+    const churchCardhData = [
+        {
+            id : 'Cnct',
+            image : 'Church/connect-min.jpg',
+            title : 'Connect',
+            header : 'Connection',
+            paragraph1 : 'We encourage our local church family to connect outside of weekend services by joining Life Groups, special interest groups, and attending events and gatherings. ',
+            paragraph2 : '' ,
+        },
+        {
+            id : 'gw',
+            image : 'Church/grow-min.jpg',
+            title : 'Grow',
+            header : 'Growing',
+            paragraph1 : 'We offer a variety of weekly classes to equip our local church family in practical training as a believer. Classes range from training in the prophetic to learning about the Bible. ',
+            paragraph2 : '' ,
+        },
+        {
+            id : 'srve',
+            image : 'Church/serve-min.jpg',
+            title : 'Serve',
+            header : 'Serving',
+            paragraph1 : 'We provide opportunities for our local church family to serve our city and the world through a wide range of ministries and missions. ',
+            paragraph2 : '' ,
+        }
+    ]
 
-    render(){
-        return(
-            <div className="font-serif">
-                <div className="w-screen bg-cover bg-no-repeat bg-center " style={{backgroundImage : `url(${require('../image/churchImage.png')})`}}>
-                <div className="flex justify-center flex-wrap items-center text-center w-screen py-20">
-                        <div className="text-white p-20 ">
-                            <HeaderComponent name={'church'}>
-                            <div className="tracking-wider">
-                                <p className="sm:text-5xl text-4xl">Personal Revival, Kingdom Impact</p>
-                            </div>
-                            </HeaderComponent>
-                        </div>
-                    </div>
-                </div>
-                <div className="text-center p-20">
-                    <div className="pt-5 pb-5">
-                        <p className="text-3xl" style={{color : '#63605B'}}>The light that shines farthest shines the brightest at home. </p>
-                        <p className="block uppercase font-bold text-sm text-green-500 pt-10 font-sans">jim elliot</p>
-                    </div>
-                </div>
-                <div className="p-20" style={{backgroundColor : '#405252'}}>
-                    <div className="text-center text-2xl text-white leading-10">
+    return(
+        <>
+            <PageContent
+                headerTitle={'church'}
+                headerRedirect={'/church'} 
+                headerContent={'Personal Revival, Kingdom Impact'}
+                contentCard={churchCardhData}
+                contentTitle={'A Local Church with a Global Mandate'}
+                quote={'The light that shines farthest shines the brightest at home.'}
+                quoteAuthor={'jim elliot'}
+                paragraph1={'Bethlehem mission is to create a vibrant family of hope filled believers who deeply experience the love and presence of God and partner with Jesus to express the joy and power of His kingdom in every area of life.'}
+                paragraph2={"We've learned that to have a global impact it starts with individual hearts. Though we worship together across multiple campuses and services, we are bound together by a single mandate: to bring Heaven to Earth. At the center of our gatherings is a pursuit of God's presence, where our hearts are transformed and launched into their destinies. "}
+                paragraph3={"Whether you are new to the family or a long-time member, we cannot wait to connect with you, pursuing God's presence until the world changes."}
+                image={'Church/churchImage.png'}>
+                <div className="sm:p-20 p-10" style={{backgroundColor : '#405252'}}>
+                    <div className="text-center lg:text-2xl text-lg text-white leading-10">
                         <p>The Lord has given us a mandate to be a resource center to impact cities and nations. What we</p>
                         <p>experience in the culture of the local church and the local city, we want to export. We train, </p>
                         <p>empower, and release people to take kingdom culture to the world. </p>
                     </div>
                 </div>
-                <div className="flex justify-center pt-20" style={{backgroundColor : '#F4F4F2'}}>                                                                          
-                    <div>
-                        <h1 className="font-serif text-3xl text-center text-gray-700">A Local Church with a Global Mandate</h1>
-                        <div className="max-w-3xl text-xl font-sans leading-wider text-gray-600 pt-10">
-                            <p className="mt-5">Bethlehem mission is to create a vibrant family of hope filled believers who deeply 
-                            experience the love and presence of God and partner with Jesus to express the joy 
-                            and power of His kingdom in every area of life.
-                            </p>
-
-                            <p className="mt-5">We've learned that to have a global impact it starts with individual hearts. Though we 
-                            worship together across multiple campuses and services, we are bound together by a single 
-                            mandate: to bring Heaven to Earth. At the center of our gatherings is a pursuit of God's 
-                            presence, where our hearts are transformed and launched into their destinies. </p>
-
-                            <p className="mt-5">Whether you are new to the family or a long-time member, we cannot wait to connect with 
-                            you, pursuing God's presence until the world changes. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        )
-    }
+            </PageContent>
+        </>
+    );
 }
 
 export default Church;

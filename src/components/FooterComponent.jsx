@@ -30,7 +30,7 @@ const Footer = () => {
     ]
 
     return(
-        <div className="w-screen" style={{backgroundColor : '#1E2427'}}>
+        <div className="w-screen font-sans" style={{backgroundColor : '#1E2427'}}>
             <div className="container mx-auto p-3 sm:flex sm:justify-between sm:items-center">
                 <div className="sm:flex sm:items-center py-2">
                     <div className="h-10 px-6 flex justify-center">
