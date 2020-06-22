@@ -10,6 +10,7 @@ const Leaders = () => {
             image : 'model1.jpg',
             name : 'Micheal Santos',
             email : 'Sample@yahoo.com',
+            ministry : 'Music',
             facebook :  <Facebook className="" color="#322D2D"/>,
             twitter : <Twitter color="#322D2D"/>,
             instagram : <Instagram color="#322D2D"/>
@@ -19,6 +20,7 @@ const Leaders = () => {
             image : 'model2.jpg',
             name : 'Jazmin Arnold',
             email : 'Sample@yahoo.com',
+            ministry : 'AWANA',
             facebook :  <Facebook className="" color="#322D2D"/>,
             twitter : <Twitter color="#322D2D"/>,
             instagram : <Instagram color="#322D2D"/>
@@ -28,6 +30,7 @@ const Leaders = () => {
             image : 'model3.jpg',
             name : 'Kaden Arnold',
             email : 'Sample@yahoo.com',
+            ministry : 'Youth',
             facebook :  <Facebook className="" color="#322D2D"/>,
             twitter : <Twitter color="#322D2D"/>,
             instagram : <Instagram color="#322D2D"/>
@@ -37,6 +40,7 @@ const Leaders = () => {
             image : 'model4.jpg',
             name : 'Amelia Amanda',
             email : 'Sample@yahoo.com',
+            ministry : 'any',
             facebook :  <Facebook className="" color="#322D2D"/>,
             twitter : <Twitter color="#322D2D"/>,
             instagram : <Instagram color="#322D2D"/>
@@ -46,6 +50,7 @@ const Leaders = () => {
             image : 'model5.jpg',
             name : 'Claudia kaneksi',
             email : 'Sample@yahoo.com',
+            ministry : 'iHelp',
             facebook :  <Facebook className="" color="#322D2D"/>,
             twitter : <Twitter color="#322D2D"/>,
             instagram : <Instagram color="#322D2D"/>
@@ -55,6 +60,7 @@ const Leaders = () => {
             image : 'model6.jpg',
             name : 'Esme Broadway',
             email : 'Sample@yahoo.com',
+            ministry : 'Pastor',
             facebook :  <Facebook className="" color="#322D2D"/>,
             twitter : <Twitter color="#322D2D"/>,
             instagram : <Instagram color="#322D2D"/>
@@ -76,7 +82,10 @@ const Leaders = () => {
                         <div className="lg:w-1/4 sm:w-1/2 p-2">
                             <div className="bg-white px-6 py-8 rounded-lg shadow-lg text-center">
                                 <div className="mb-3">
-                                    <div>
+                                    <div className="flex flex-row justify-between border-b py-2">
+                                    <span className="uppercase font-bold text-blue-400">{info.ministry}</span>
+                                    </div>
+                                    <div className="py-5">
                                         <img className="w-48 h-48 mx-auto rounded-full object-cover border-4 border-blue-500" 
                                         src={require(`../image/Leaders/${info.image}`)} alt=""/>
                                     </div>

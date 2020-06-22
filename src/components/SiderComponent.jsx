@@ -40,7 +40,7 @@ class Sider extends React.Component {
                             <li className="my-3"><Link to="/ministries">Ministries</Link></li>
                             <li className="my-3"><Link to="/events">Events</Link></li>
                             <li className="my-3"><Link to="/leaders">Leaders</Link></li>
-                            <li className="my-3"><Link to="/testimonies">Testimonies</Link></li>
+                            {/* <li className="my-3"><Link to="/testimonies">Testimonies</Link></li> */}
                         </ul>
                         </div>
                     </>
