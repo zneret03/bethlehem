@@ -33,6 +33,7 @@ class Sider extends React.Component {
                         </div>
                         <div className="flex flex-col mx-24 py-20 text-3xl font-segoe-UI" style={{color : '#A19F9C'}}>
                         <ul>
+                            <li className="my-3"><Link to="/">Home</Link></li>
                             <li className="my-3"><Link to="/about">About us</Link></li>
                             <li className="my-3"><Link to="/church">Church</Link></li>
                             <li className="my-3"><Link to="/music">Music</Link></li>

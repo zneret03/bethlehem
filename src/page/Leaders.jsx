@@ -85,7 +85,7 @@ const Leaders = () => {
                                     </div>
                                     <ul className="flex justify-center">
                                     <li className="mr-5 rounded-full border hover:border-gray-900 cursor-pointer px-3 py-3 ">
-                                        {info.facebook}
+                                        {info.facebook} 
                                     </li>
                                     <li className="mr-5 rounded-full border hover:border-gray-900 cursor-pointer px-3 py-3 ">
                                         {info.twitter}      
