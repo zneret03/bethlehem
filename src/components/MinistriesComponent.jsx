@@ -9,7 +9,7 @@ class Ministries extends React.Component{
         
         const content = [
             <Content key="Ministries">
-                <div className="mt-20 text-white animated bounce">
+                <div className="mt-10 sm:mt-20 text-white animated bounce">
                     <Paragraph title={'MINISTRIES'} color={'#242020'} 
                     heading={'Reaching Out, Reflecting Christ,'}
                     secondHeading={'Renewing Lives.'}

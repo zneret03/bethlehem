@@ -8,7 +8,7 @@ import MinistriesComponent from './MinistriesComponent';
 import EventsComponent from './EventsComponent';
 import QuoteComponent from './QuoteComponent';
 import LeadersComponent from './LeadersComponent';
-import InformationComponent from './InformationCardComponent';
+import InformationComponent from './InformationComponent';
 import InformationCardComponent from './InformationCardComponent';
 import ServiceComponent from './ServiceComponent';
 import UpComingEventsComponent from './UpComingEventsComponent';

@@ -1,22 +1,17 @@
 import React from 'react';
-import HeaderComponent from '../components/HeaderComponent';
+import PageHeaderContent from '../utils/PageHeaderContent';
 import ServiceComponent from '../components/ServiceComponent';
 import FooterComponent from '../components/FooterComponent';
 const PageContent = ({headerTitle, headerContent, headerRedirect, contentTitle, contentCard, quote, quoteAuthor, paragraph1, paragraph2, paragraph3, image, children}) => {
         
         return(
             <div className="font-serif">
-                <div className="w-screen bg-cover bg-no-repeat bg-center " style={{backgroundImage : `url(${require(`../image/${image}`)})`}}>
-                <div className="flex justify-center flex-wrap items-center w-screen py-20">
-                        <div className="text-white sm:p-20 p-10">
-                            <HeaderComponent redirect={headerRedirect} name={headerTitle}>
-                            <div className="sm:tracking-wider sm:text-5xl text-3xl">
-                                <p className="text-center">{headerContent}</p>
-                            </div>
-                            </HeaderComponent>
-                        </div>
-                    </div>
-                </div>
+                <PageHeaderContent 
+                    Redirect={headerRedirect}
+                    Title={headerTitle}
+                    Content={headerContent}
+                    image={image}
+                />
                 <div className="text-center sm:p-20 p-10">
                     <div className="pt-3 pb-3 mx-auto max-w-3xl">
                         <p className="sm:text-3xl text-xl" style={{color : '#63605B'}}>“{quote}”</p>

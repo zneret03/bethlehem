@@ -4,8 +4,8 @@ import {Link} from 'react-router-dom';
 const Card = ({information}) =>  {
 
         return(
-            <div className="container mx-auto p-6 grid grid-rows gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 
-            flex justify-center pt-10 pb-20">  
+            <div className="container mx-auto p-6 grid grid-rows gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 
+            flex justify-center pt-10 pb-20 font-sans">  
                 {information.map((info) => (
                     <Link to={info.redirect} key={info.id}>
                         <div className="mx-auto rounded overflow-hidden shadow-lg transition 

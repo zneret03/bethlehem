@@ -9,7 +9,7 @@ class Church extends React.Component{
 
         const content = [
             <Content key="church">
-                <div className="mt-20 text-white">
+                <div className="mt-1 sm:mt-20 text-white">
                     <Paragraph title={'CHURCH'} 
                     heading={'Personal Revival, Kingdom'}
                     secondHeading={'Impact'}

@@ -43,9 +43,9 @@ const Footer = () => {
                 <div className="font-bold sm:flex" style={{color : '#8D7979'}}>
                     <div className="flex justify-center">
                         {socialIcons.map((icons, index) => (
-                            <div className="border border-gray-700 hover:border-gray-200 rounded-full py-3 px-1 mx-1" key={index}>
-                                <a href={icons.link}>{icons.icon}</a>
-                            </div>
+                            <ul key={index}>
+                                <li className="border border-gray-700 hover:border-gray-200 rounded-full py-3 px-1 mx-1"><a href={icons.link}>{icons.icon}</a></li>
+                            </ul>
                         ))}
                     </div>
                 </div>

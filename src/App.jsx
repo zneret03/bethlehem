@@ -7,6 +7,9 @@ import ScrollToTop from './utils/ScrollToTop';
 const Root = lazy(() => import('./components/Root'));
 const Church = lazy(() => import('./page/Church'));
 const Music = lazy(() => import('./page/Music'));
+const Ministries = lazy(() => import('./page/Ministries'));
+const Events = lazy(() => import('./page/Events'));
+const Leaders = lazy(() => import('./page/Leaders'));
 class App extends React.Component {
   render(){
     return (
@@ -17,6 +20,9 @@ class App extends React.Component {
               <Route exact path="/" component={Root}/>
               <Route exact path="/church" component={Church}/>
               <Route exact path="/music" component={Music}/>
+              <Route exact path="/ministries" component={Ministries}/>
+              <Route exact path="/events" component={Events}/>
+              <Route exact path="/leaders" component={Leaders}/>
               <Route exact component={Error}/>
           </Switch>
         </Suspense>
